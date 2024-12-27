@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "currencie": {
+    "ocurrency": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/currencie",
+            "outputPath": "dist/ocurrency",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -76,10 +76,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "currencie:build:production"
+              "buildTarget": "ocurrency:build:production"
             },
             "development": {
-              "buildTarget": "currencie:build:development"
+              "buildTarget": "ocurrency:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -110,5 +110,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e865af13-05cd-4b28-a7e6-ba6c889a9f60"
   }
 }
